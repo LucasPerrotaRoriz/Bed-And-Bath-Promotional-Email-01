@@ -235,7 +235,7 @@
             2. MSO tags for Desktop Windows Outlook enforce a 600px width.
             Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 600px is a good width. Change with caution.
         -->
-        <div style="max-width: 600px; margin: 0 auto; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; background-color: #FAFAFA" class="email-container">
+        <div style="max-width: 600px; margin: 0 auto; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;" class="email-container">
             <!--[if mso]>
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
             <tr>
@@ -243,7 +243,7 @@
             <![endif]-->
 
 	        <!-- Email Body : BEGIN --> 
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FAFAFA">
                 <!-- Email Home : BEGIN --> 
                 <tr>
                     <td>
@@ -666,8 +666,35 @@
                     </td>
                 </tr>
                 <!-- Social Footer : END -->
+
+                
             </table>
             <!-- Email Body : END -->
+
+            <!-- Footer : BEGIN --> 
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td>
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td align="center" style="font-family: 'Open sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; line-height: 20px; padding-top: 20px; padding-bottom: 20px;">
+                                    <a href="#" style="font-family: 'Open sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-weight: bold; line-height: 20px;
+                                    text-decoration: underline; color: #242424;">
+                                        Unsubscribe
+                                    </a>
+                                    <p style="font-weight: bold; margin: 0;">
+                                        Our mailing address is:
+                                    </p>
+                                    <p style="margin: 0;">
+                                        123 Heirloom ST Anytown CA 01234
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- Footer : END --> 
 
             <!--[if mso]>
             </td>
